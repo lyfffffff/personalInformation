@@ -1,0 +1,23 @@
+一、你的自我评价/定位
+  首先我必须直面我的短板，我没有实习经验，可能比有经验的人更需要时间去理解个人开发和实际开发的差异，但是我认为，我并不是完全不懂这一块的东西，我也有个人开发经验，也在开发一个Vue商城项目，就是开发逻辑思维的话，我认为我还是有一定的基础的。而且就是知道自己有缺点，才会更加珍惜公司给的机会，应聘之艰难让我更加坚定，就是虽然很难，但是我并没有想要去放弃，或者走捷径去一些比较不挑人、比较适合女生的工作，因为我确实是想要往这方面发展的，我认为，如果我真正进入到一家公司，真正进入到工作中，我会很注重个人成长，会很努去工作和学习，也能承受较大的压力，因为我是一名应届生，就是小白，是需要公司培养的，我必须快速成长起来，然后真正去融入工作环境，我觉得大方向是我会一直坚持这一行，小方向是近几年，我都会脚踏实地，努力成长。
+
+二、为什么选择做这个?
+1：自己对所应聘职业的激情与热爱程度
+2：自己在所应聘职业的相关经历与经验能够使你胜任此项任务
+3：表达自己对做好此项工作的决心与信心
+  首先我的专业是数学与应用数学，平常课程涉及到的方向是计算机和数学，在学习过程中我发现我对计算机课程是非常感兴趣的，后来经过了解和咨询，发现计算机是分前端和后端的，我都去了解一下，这时候接触到的前端，在实际应用中，我发现前端写出来的东西是很直观的，之前学习java时，基本是把数学问题用计算机语言实现，但是前端语言设计出来的是一个可以直接在浏览器中看见的Web页面，而且可以设计出很美观的页面，我模仿过小米商城页面，一模一模很美观，让人非常有成就感的，所以一直坚持了下来，也想以后一直从事这方面的工作。所以在毕设的时候也选择了计算机相关的设计，自己从头至尾完成了一次项目开发后，发现还是很喜欢，对做好这方面的工作也有一定的信心。
+
+
+三、为什么没有实习？
+   首先，就是外部因素的话，是大四还有几门课程，还有自己的一些事情，比如练车和入党什么的，所以就没有去实习，但是在课余时间的话，我还是有去学习前端的一些东西，作为一名应聘者。在工作经验方面我确有所欠缺。
+
+四、
+
+五、你的学习方式是什么？
+
+六、请自我介绍，3分钟
+Hello interviewers, my name is Luo Yufeng. I am 22 years old and born in Huizhou City, Guangdong. I am currently a senior at Guangdong University of Technology. My major is mathematics and applied mathematics, and I will obtain an undergraduate degree certificate after graduation in July. In the four years of university, I have focused on my studies, and I have a certain foundation in computer and mathematics. During my time at school, I passed English Level 6 and Office Level 2 and received a scholarship. My intended position is a web front-end developer. I have majored in Java and C language, and used the Java language to develop a library management system. And since the goal of my junior year was determined, I independently learned front-end（房天） related knowledge, including html, css, js and jquery, and learned the vue framework and webpack packaging tools. My project development experience is my graduation project, called the campus（canpays） integrated service platform applet. In the future work, I will continue to improve my abilities with ample energy and a spirit of learning.
+
+各位面试官，你们好，我叫罗雨凤，今年22岁，出生在广东惠州市，目前是广东工业大学的一名大四学生。我的专业是数学和应用数学，将在七月份取得本科学位证。大学四年来，我将重心放在学习上，在计算机和数学上都有一定的基础，在校期间，我通过了英语六级，Office二级，并获得了奖学金。我的意向岗位为Web前端开发师，曾主修过Java和C语言，并使用java语言开发过图书管理系统。并自大三确定目标以来，我自主学习了前端相关知识，包括html、css、js和jquery，并学习过vue框架和webpack打包工具。我的项目开发经历是我的毕业设计，名为校园综合服务平台小程序，在未来的工作中，我将以充沛的精力，好学的精神，不断提高自己的能力。
+
+七、你还有什么问题吗？或者还有什么想要了解的吗？

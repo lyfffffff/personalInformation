@@ -1,0 +1,102 @@
+springBoot接口文档
+1-5初始化接口--6-8配置接口--9-15获取数据库信息
+1，安装IDEA
+2，创建一个新project
+3，类型选择spring Initializr（需要jdk）
+4，在Group中取名字
+5，勾选初始化tool
+ - 在web中勾选 Spring Web
+ - 在SQL中勾选JDBC API
+ - 在SQL中勾选MySQL Driver
+ - 在SQL中勾选MyBatis Framework
+
+6，取名字，初始化完成，开始配置接口
+7，src-main-java-DemoApplication为入口函数
+8，配置数据库
+ - resources-application.xxxx修改后缀为yml
+yml配置如下（只需配置一次）：
+1，server---设置端口号和ssl证书
+2，spring---设置数据库连接配置
+3，mybatis---设置mybatis文件
+4，缩进代表文件等级，classpath表示resources
+5，8.0以上的数据库的dirver（驱动）为com.mysql.cj.jdbc.Driver
+6，8.0以上的数据库url需要加上?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+
+
+	server:
+	  port: 8082
+	#  ssl:
+	#    key-store: tomcat.keystore
+	#    key-alias: tomcat
+	#    key-store-password: 123456
+	#    key-store-type: PKCS12
+
+	spring:
+  	datasource:
+    	dirver-class-name: com.mysql.cj.jdbc.Driver
+    	url: jdbc:mysql://localhost:3306/gdut_service?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    	username: root
+    	password: '123456'
+
+	mybatis:
+  	  mapper-locations: classpath:mapper/*.xml
+
+9，数据库配置完后，获取数据库信息
+10，controller包下放controller文件--用于前端交涉
+引入两个注解
+ - 类前引入@RestController
+ - 类后引入@RequestMapping("/路径")
+11，创建实体类，entiy包下的class和数据库字段保持一致--数据库映射
+ - 使用构造函数（alt+insert）选中所有字段
+ - 使用set-get选中所有字段
+12，创建mapper包下的mapper接口--操作数据库的动作，insert，select
+class改为User接口
+ - 头部加入@Mapper、@Repository
+ - 数据库的数据都是User类的对象实例化
+ - List<User> findAll()
+ - 三种方法：插入、删除、查询。方法体中加入
+ - @Insert("查询语句")+
+    void insert(Collect collect);
+ - @Delete("删除语句")+
+void delete(@Param("username") String username,@Param("info_id") long info_id);
+ - @Select(value = "查询语句")+@Results
+            ({
+                    @Result(property = "info_id",column = "info_id"),//逐行插入
+            })
+List<Information> getbyusername(@Param("username") String username);//方法，将传入的username插入
+
+13，建立mapper包下的xml文件，写sql语句--这一步可省略
+ - 需要在classpath下写，也就是resource下
+ - 固定写法
+	- namespace表示指向java下的哪一个mapper
+	- id和表示mapper下的方法
+	- resultType表示返回类型，和实体类表示一致
+14,创建service包--处理业务逻辑，计算
+ - 头部加入@Service
+ - 类体加入@Autowired
+ - 定义mapper接口的实例 private UserMapper userMapper
+ - 定义一个方法，返回一个实体类类型，名字随意
+	- public List<User> findAll(){}
+ - 将实体类返回出去
+	- return userMapper.findAll()//这个是接口里的方法
+15，在controller中展示
+ - 定义一个方法，名字自己取，返回类型和实体类保持一致
+ - 将service中的类实例化
+ - private UserService userService，也要使用@Autowired注解去new
+16，springboot中的文件映射关系
+xml--mapper里的方法
+service---mapper里的方法，处理业务逻辑
+controller---service里的方法，返回处理好的业务逻辑，如无需修改，则直接映射mapper
+
+/collect/iscollect  是否收藏
+/collect/insert  插入
+/collect/delete  删除
+/collect/getbyusername  按照用户名查找
+
+/information/getbyusername 按照用户名查找
+/information/insert 插入
+/information/getbycate 按照信息类别查询
+/information/update 更新信息
+/information/delete 删除信息
+
+
